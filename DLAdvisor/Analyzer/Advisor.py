@@ -1,10 +1,6 @@
 from DLAdvisor.ProfileBuilder import Collector
 from DLAdvisor.Analyzer import Resource
 
-# TEST ONLY
-def kttest1():
-    Collector.greeting()
-
 def advice(stage) :
     prepRes = populatePrepResources(stage)
     OLRes = populateOLResources(stage)
@@ -23,7 +19,7 @@ def advice(stage) :
     OLRes.display()
     print("########")
     
-## TODO : Provide Resources
+## TODO [NOWSHABA] : Provide Resources (e.g. knowledge test online booklet, practice test, youtbue channels on how to pass the knowledge test/road test5/road test7/what to do on road test day, etc)
 def populatePrepResources(stage):
     
     res1 = [
@@ -62,7 +58,7 @@ def populatePrepResources(stage):
     return Resource.PrepResource(stage,res)
 
 
-# TODO : Provide Resources
+## TODO [NOWSHABA] : Provide Resources (e.g. icbc application links to apply knowledge test/road test/reciprocal license exchange, knowledge test registration links, driving school registration link, etc) 
 def populateOLResources(stage):
 
     res1 = [
