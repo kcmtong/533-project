@@ -24,7 +24,7 @@ def execute():
     
     # TODO BY KENNY
     # temp set all user.stage = 1, to skip the following line when UserProfile pkg is completed
-    user.stage = 1
+    # user.stage = 1
     Advisor.advice(user.stage)
     
     
