@@ -19,29 +19,38 @@ def advice(stage) :
     OLRes.display()
     print("########")
     
-## TODO [NOWSHABA] : Provide Resources (e.g. knowledge test online booklet, practice test, youtbue channels on how to pass the knowledge test/road test5/road test7/what to do on road test day, etc)
 def populatePrepResources(stage):
     
     res1 = [
-        ['Learn stage 1/Knowledge Test','http://www.stage1.com'],
+        ['Learn stage 1/Knowledge Test','https://www.icbc.com/driver-licensing/new-drivers/Pages/Get-your-L.aspx'],
+        ['Book Appointment for Knowledge Test','https://appointments.servicebc.gov.bc.ca/appointment'],
+        ['Practice Knowledge Test', 'https://www.icbc.com/driver-licensing/new-drivers/Pages/practice-knowledge-test.aspx'],
+        ['Download ICBC Apps for iOS','https://apps.apple.com/ca/app/icbc-practice-knowledge-test/id438491857'],
+        ['Download ICBC Apps for Android','https://play.google.com/store/apps/details?id=com.icbc.knowledge'],
+        ['Learn to Drive Smart', 'https://www.icbc.com/driver-licensing/driving-guides/Pages/Learn-to-Drive-Smart.aspx'],
         ['Kelowna Best Driving School','https://threebestrated.ca/driving-schools-in-kelowna-bc'],
         ['BC Driving Tips','https://www.youtube.com/watch?v=UohMY0CT_V8']
         ]
     
     res2 = [
-        ['Learn stage 2/RoadTest7','http://www.stage2.com'],
+        ['Learn stage 2/RoadTest7','https://www.icbc.com/driver-licensing/new-drivers/Pages/Get-your-N.aspx'],
+        ['Book a Road Test','https://onlinebusiness.icbc.com/webdeas-ui/home'],
+        ['Learn to Drive Smart', 'https://www.icbc.com/driver-licensing/driving-guides/Pages/Learn-to-Drive-Smart.aspx'],
         ['Kelowna Best Driving School','https://threebestrated.ca/driving-schools-in-kelowna-bc'],
         ['BC Driving Tips','https://www.youtube.com/watch?v=UohMY0CT_V8']
         ]
     
     res3 = [
-        ['Learn stage 3/RoadTest5','http://www.stage3.com'],
+        ['Learn stage 3/RoadTest5','https://www.icbc.com/driver-licensing/new-drivers/Pages/Get-your-full-licence.aspx'],
+        ['Book a Road Test','https://onlinebusiness.icbc.com/webdeas-ui/home'],
+        ['Learn to Drive Smart', 'https://www.icbc.com/driver-licensing/driving-guides/Pages/Learn-to-Drive-Smart.aspx'],
         ['Kelowna Best Driving School','https://threebestrated.ca/driving-schools-in-kelowna-bc'],
         ['BC Driving Tips','https://www.youtube.com/watch?v=UohMY0CT_V8']
         ]
     
     res4 = [
         ['Learn stage 4/RecipLic','http://www.stage4.com'],
+        ['ICBC Office Locator','https://www.icbc.com/locators/Pages/default.aspx?type=1&subtype=0'],
         ['Kelowna Best Driving School','https://threebestrated.ca/driving-schools-in-kelowna-bc'],
         ['BC Driving Tips','https://www.youtube.com/watch?v=UohMY0CT_V8']
         ]
@@ -62,20 +71,25 @@ def populatePrepResources(stage):
 def populateOLResources(stage):
 
     res1 = [
-        ['Learn stage 1/Knowledge Test OL','http://www.stage1.com']
+        ['Learn stage 1/Knowledge Test OL','https://www.icbc.com/driver-licensing/new-drivers/Pages/Get-your-L.aspx'],
+        ['ICBC Office Locator','https://www.icbc.com/locators/Pages/default.aspx?type=1&subtype=0']
         ]
     
     res2 = [
-        ['Learn stage 2/RoadTest7 OL','http://www.stage2.com'],
-        ['Kelowna Best Driving School','https://threebestrated.ca/driving-schools-in-kelowna-bc']
+        ['Learn stage 2/RoadTest7 OL','https://www.icbc.com/driver-licensing/new-drivers/Pages/Get-your-N.aspx'],
+        ['Book Road Test','https://onlinebusiness.icbc.com/webdeas-ui/home'],
+        ['ICBC Office Locator','https://www.icbc.com/locators/Pages/default.aspx?type=1&subtype=0']
         ]
     
     res3 = [
-        ['Learn stage 3/RoadTest5 OL','http://www.stage3.com']
+        ['Learn stage 3/RoadTest5 OL','https://www.icbc.com/driver-licensing/new-drivers/Pages/Get-your-full-licence.aspx'],
+        ['Book Road Test','https://onlinebusiness.icbc.com/webdeas-ui/home'],
+        ['ICBC Office Locator','https://www.icbc.com/locators/Pages/default.aspx?type=1&subtype=0']
     ]
     
     res4 = [
-        ['Learn stage 4/RecipLic OL','http://www.stage4.com']
+        ['Learn stage 4/RecipLic OL','http://www.stage4.com'],
+        ['ICBC Office Locator','https://www.icbc.com/locators/Pages/default.aspx?type=1&subtype=0']
         ]
 
     if (stage == 1) :

@@ -4,13 +4,12 @@ class UserProfile:
         self.name = name
         # 0 : None; 1 : Learner's; 2 : Novice
         self.current_icbc_lic = current_icbc_lic
-        #
         self.is_dl_exchange = is_dl_exchange
         self.is_recip_country = is_recip_country
         self.stage = stage
-
-# TODO (NOWSHABA)        
+      
     def __str__(self):
+        
         if (self.current_icbc_lic == 0) :
             current_icbc_lic_str = "None"
         elif (self.current_icbc_lic == 1) :
@@ -19,16 +18,17 @@ class UserProfile:
             current_icbc_lic_str = "Novice's License"
         
         # TODO : other attributes to be added ....
-        is_dl_exchange_val = "Yes" if self.is_dl_exchange else "No"
-        if (not self.is_dl_exchange) :
-            is_recip_country_val = 'N/A'
-        elif (self.is_recip_country) :
-            is_recip_country_val = 'Yes'
-        else :
-            is_recip_country_val = 'No'
+        
+        #is_dl_exchange_val = "Yes" if self.is_dl_exchange else "No"
+        #if (not self.is_dl_exchange) :
+        #    is_recip_country_val = 'N/A'
+        #elif (self.is_recip_country) :
+        #    is_recip_country_val = 'Yes'
+        #else :
+        #    is_recip_country_val = 'No'
         
         # TODO : A better output presentation, maybe?
-        return f'User Details \nName : {self.name}\nCurrent ICBC License : {current_icbc_lic_str}\nIs Reciprocal DL : {is_dl_exchange_val}\nForeign License from Reciprocal Countries : {is_recip_country_val}'
+        return f'User Details \nName : {self.name}\nCurrent ICBC License : {current_icbc_lic_str}\nWant to exchange : {self.is_dl_exchange}\nForeign License from Reciprocal Country: {self.is_recip_country}\nAdvicing Stage: {self.stage}'
     
     
     def formatName(self) :

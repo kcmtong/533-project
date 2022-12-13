@@ -12,6 +12,7 @@ def execute():
         print("Sorry, you are not eligible!")
         return
     print("Great! you are eligible to proceed!")
+    
     user = Collector.gatherProfile()    
     user.formatName()
     print("Here is your profile summary\n######" + str(user) +
