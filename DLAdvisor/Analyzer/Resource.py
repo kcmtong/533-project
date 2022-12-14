@@ -22,6 +22,7 @@ class Resource:
             return "MISC"
 
 #################
+
 class PrepResource(Resource) :
     
     def __init__(self,stage,resources):
@@ -34,6 +35,7 @@ class PrepResource(Resource) :
 
         
 ##################
+
 class OLResource(Resource) :
     
     def __init__(self,stage,resources):

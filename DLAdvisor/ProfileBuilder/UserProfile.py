@@ -27,8 +27,7 @@ class UserProfile:
         #else :
         #    is_recip_country_val = 'No'
         
-        # TODO : A better output presentation, maybe?
-        return f'User Details \nName : {self.name}\nCurrent ICBC License : {current_icbc_lic_str}\nWant to exchange : {self.is_dl_exchange}\nForeign License from Reciprocal Country: {self.is_recip_country}\nAdvicing Stage: {self.stage}'
+        return f'User Details \nName : {self.name}\nCurrent ICBC License : {current_icbc_lic_str}\nWant to exchange : {self.is_dl_exchange}\nForeign License from Reciprocal Country: {self.is_recip_country}\nAdvising Stage: {self.stage}'
     
     
     def formatName(self) :

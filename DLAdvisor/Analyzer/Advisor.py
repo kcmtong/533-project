@@ -11,7 +11,7 @@ def advice(stage) :
     elif (stage == 3) :
         objective = "pass the ICBC Road Test 7"
     else :
-        objectove = "apply exchanging for your license from Reciprocal countries"
+        objective = "apply exchanging for your license from Reciprocal countries"
         
     print(f'Here are your suggested resources to {objective}\n##########' )
     prepRes.display()
@@ -49,7 +49,7 @@ def populatePrepResources(stage):
         ]
     
     res4 = [
-        ['Learn stage 4/RecipLic','http://www.stage4.com'],
+        ['Learn stage 4/RecipLic','https://www.icbc.com/driver-licensing/moving-bc/Pages/Moving-from-another-country.aspx'],
         ['ICBC Office Locator','https://www.icbc.com/locators/Pages/default.aspx?type=1&subtype=0'],
         ['Kelowna Best Driving School','https://threebestrated.ca/driving-schools-in-kelowna-bc'],
         ['BC Driving Tips','https://www.youtube.com/watch?v=UohMY0CT_V8']
@@ -67,7 +67,8 @@ def populatePrepResources(stage):
     return Resource.PrepResource(stage,res)
 
 
-## TODO [NOWSHABA] : Provide Resources (e.g. icbc application links to apply knowledge test/road test/reciprocal license exchange, knowledge test registration links, driving school registration link, etc) 
+## Populate Online Resources (e.g. icbc application links to apply knowledge test/road test/reciprocal license exchange, knowledge test registration links, driving school registration link, etc) 
+
 def populateOLResources(stage):
 
     res1 = [
@@ -88,7 +89,7 @@ def populateOLResources(stage):
     ]
     
     res4 = [
-        ['Learn stage 4/RecipLic OL','http://www.stage4.com'],
+        ['Learn stage 4/RecipLic OL','https://www.icbc.com/driver-licensing/moving-bc/Pages/Moving-from-another-country.aspx'],
         ['ICBC Office Locator','https://www.icbc.com/locators/Pages/default.aspx?type=1&subtype=0']
         ]
 

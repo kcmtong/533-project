@@ -58,7 +58,7 @@ def passBasicEligibility():
                 if reciprocal == "Yes":
                     stage = 4
                 else:
-                    knowledgeTest =("Did you pass ICBC Knowledge Test? [Yes/No]")
+                    knowledgeTest =input("Did you pass ICBC Knowledge Test? [Yes/No]")
                     if knowledgeTest == "Yes":
                         stage = 3
                     else:
