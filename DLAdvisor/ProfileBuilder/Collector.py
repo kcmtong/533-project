@@ -29,6 +29,8 @@ def passBasicEligibility():
     global knowledgeTest
     
     try:
+        wantToExchange="No"
+        reciprocal="No"
         bcres = input("Are you a BC resident?[Y/N]")#BC resident
         if (bcres == "N") :
             print("Only BC residents are eligible to get a BC Driving License")
@@ -64,7 +66,7 @@ def passBasicEligibility():
                     else:
                         stage = 1
             else:
-                reciprocal = input("Is your license from a reciprocal country? [Yes/No]")
+                #reciprocal = input("Is your license from a reciprocal country? [Yes/No]")
                 stage = 1
         elif haveICBCLicense == 1:
             stage = 2
